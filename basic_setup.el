@@ -11,7 +11,8 @@
 (package-initialize)
 
 ;; Install my list of packages
-(load "install_my_packages.el")
+(load (concat (file-name-directory load-file-name)
+       "install_my_packages.el"))
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; AUTO-COMPLETE
